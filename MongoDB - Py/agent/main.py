@@ -17,7 +17,7 @@ def get_cryptocurrecies_from_api():
         result=r.json()
         return result
 
-    raise exception('Api error')
+    ## raise exception('Api error')
 
 # Validation
 def firts_element(elements):
