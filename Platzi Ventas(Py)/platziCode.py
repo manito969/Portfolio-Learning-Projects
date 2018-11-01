@@ -1,5 +1,6 @@
 import sys
 
+
 clients = [
     {
         'name': 'Pablo',
@@ -34,15 +35,14 @@ def list_clients():
             company=client['company'], 
             email=client['email'], 
             position=client['position']))
-   
 
-def update_client(client_name,update_client):
-    global Clients
-    client_name_index= next((index for (index, client) in enumerate(clients) if client['name']==client_name),-1)
-    if client_name_index >= 0:
-        clients[client_name_index] = updated_client
+def update_client(client_id, updated_client):
+    global clients
+
+    if len(clients) - 1 >= client_id:
+        clients[client_id] = updated_client
     else:
-        print('Client No exist')
+        print('Client not in client\'s list')
 
 def delete_client(client_id):
     global clients
@@ -101,10 +101,10 @@ if __name__ == '__main__':
     elif command == 'L':
         list_clients()
     elif command == 'U':
-        client_name = (_get_client_field('name'))
+        client_id = int(_get_client_field('id'))
         updated_client = _get_client_from_user()
 
-        update_client(client_name, updated_client)
+        update_client(client_id, updated_client)
         list_clients()
     elif command == 'D':
         client_id = int(_get_client_field('id'))
