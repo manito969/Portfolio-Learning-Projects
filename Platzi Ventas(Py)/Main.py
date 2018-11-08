@@ -1,19 +1,24 @@
 import sys
+import csv
+import os
 
-clients = [
-    {
-        'name': 'Pablo',
-        'company': 'Google',
-        'email': 'pablo@google.com',
-        'position': 'Software Engineer',
-    },
-    {
-        'name': 'Ricardo',
-        'company': 'Facebook',
-        'email': 'ricardo@facebook.com',
-        'position': 'Data Engineer',
-    },
-]
+CLIENT_TABLE='.clients.csv'
+CLIENT_SCHEMA=['name','company','email','position']
+clients = []
+
+def _initialize_clients():
+    with open(CLIENT_TABLE, mode='r') as f:
+        reader =csv.DictReader(f,fieldnames=CLIENT_SCHEMA)
+        for row in reader:
+            clients.append(row)
+
+def _save_clients():
+    tmp_table= '{}.tmp'.format(CLIENT_TABLE)
+    with open (tmp_table, mode='w') as f:
+        writer= csv.DictWriter(f,fieldnames=CLIENT_SCHEMA) 
+        writer.writerows(clients)
+        os.remove(CLIENT_TABLE)
+    os.rename(tmp_table,CLIENT_TABLE)
 
 def create_client(client):
     global clients
@@ -35,7 +40,6 @@ def list_clients():
             email=client['email'], 
             position=client['position']))
    
-
 def update_client(client_name,update_client):
     global Clients
     client_name_index= next((index for (index, client) in enumerate(clients) if client['name']==client_name),-1)
@@ -88,6 +92,7 @@ def _print_welcome():
     print('[S]earch client')
 
 if __name__ == '__main__':
+    _initialize_clients()
     _print_welcome()
 
     command = input()
@@ -95,22 +100,17 @@ if __name__ == '__main__':
 
     if command == 'C':
         client = _get_client_from_user()
-
         create_client(client)
-        list_clients()
+        
     elif command == 'L':
         list_clients()
     elif command == 'U':
         client_name = (_get_client_field('name'))
         updated_client = _get_client_from_user()
-
-        update_client(client_name, updated_client)
-        list_clients()
+        update_client(client_name, updated_client)        
     elif command == 'D':
         client_id = int(_get_client_field('id'))
-
-        delete_client(client_id)
-        list_clients()
+        delete_client(client_id)     
     elif command == 'S':
         client_name = _get_client_field('name')
         found = search_client(client_name)
@@ -121,3 +121,5 @@ if __name__ == '__main__':
             print('The client: {} is not in our client\'s list'.format(client_name))
     else:
         print('Invalid command')
+
+    _save_clients()
