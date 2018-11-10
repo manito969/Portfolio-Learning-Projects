@@ -15,7 +15,7 @@ In my learning process i had the fortune the i can access to a high quality plat
 
 ### Travel Industry
 
-- **Price prediction** 
+- **Price prediction**
 - **SQL query Optimization**
 
 ### Agriculture industry
