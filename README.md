@@ -1,26 +1,33 @@
-# Learning projects on my way to Professional in Data Science
+# Projects on my way to Professional in Data Science
+This is the portfolio of my main projects in my professional career in the world of data science.
 
-## Python
+## Learning
 
-**Api Rest** (Mongo_DB)
-**Command Line Program** (Clikker)
-**ETL** (Web scrapping BS4, Pandas, SqlAlchemy)
+In my learning process i had the fortune the i can access to a high quality platform like Platzi (https://platzi.com/), edx (https://www.edx.org/), Data Camp (https://www.datacamp.com/) and  have three  great mentor Like Siraj Raval (https://github.com/llSourcell), Favio André Vázquez (https://github.com/FavioVazquez) and Adam Saxton (https://github.com/guyinacube)
 
-## Travel Industry
+### Python
 
-**Price prediction** Regression
-**SQL query Optimization** Reforic
+- **Api Rest** (Mongo_DB)
+- **Command Line Program** (Clikker)
+- **ETL** (Web scrapping BS4, Pandas, SqlAlchemy)
 
-## Agriculture industry
+## Professional
 
-**Optimization of the grinding calendar** Cla
+### Travel Industry
 
-## Retail Industry
+- **Price prediction** 
+- **SQL query Optimization**
 
-**Inventory Optimization**g
+### Agriculture industry
+
+- **Optimization of the grinding calendar**
+
+### Retail Industry
+
+- **Inventory Optimization**
 
 ## Challenges
 
-**House Prices** Advanced Regression Techniques
-**Airbnb** New User Bookings
-**Expedia** Hotel Recommendations
+- **House Prices** Advanced Regression Techniques
+- **Airbnb** New User Bookings
+- **Expedia** Hotel Recommendations
