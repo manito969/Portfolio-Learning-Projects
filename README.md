@@ -3,7 +3,7 @@ This is the portfolio of my main projects in my professional career in the world
 
 ## Learning
 
-In my learning process i had the fortune the i can access to a high quality platform like Platzi (https://platzi.com/), edx (https://www.edx.org/), Data Camp (https://www.datacamp.com/) and  have three  great mentor Like Siraj Raval (https://github.com/llSourcell), Favio André Vázquez (https://github.com/FavioVazquez) and Adam Saxton (https://github.com/guyinacube)
+In my learning process i had the fortune the i can access to a high quality platform like [Platzi](https://platzi.com/), [edx] (https://www.edx.org/), [DataCamp] (https://www.datacamp.com/) and  have three  great mentor Like [Siraj Raval] (https://github.com/llSourcell), [Favio André Vázquez] (https://github.com/FavioVazquez) and [Adam Saxton] (https://github.com/guyinacube)
 
 ### Python
 
