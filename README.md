@@ -1,26 +1,26 @@
 # Learning projects on my way to Professional in Data Science
 
-## Python
+### Python
 
-**Api Rest** (Mongo_DB)
-**Command Line Program** (Clikker)
-**ETL** (Web scrapping BS4, Pandas, SqlAlchemy)
+- **Api Rest** (Mongo_DB)
+- **Command Line Program** (Clikker)
+- **ETL** (Web scrapping BS4, Pandas, SqlAlchemy)
 
-## Travel Industry
+### Travel Industry
 
-**Price prediction** Regression
-**SQL query Optimization** Reforic
+- **Price prediction** Regression
+- **SQL query Optimization** Reforic
 
-## Agriculture industry
+### Agriculture industry
 
-**Optimization of the grinding calendar** Cla
+- **Optimization of the grinding calendar**
 
-## Retail Industry
+### Retail Industry
 
-**Inventory Optimization**g
+- **Inventory Optimization**g
 
-## Challenges
+### Challenges
 
-**House Prices** Advanced Regression Techniques
-**Airbnb** New User Bookings
-**Expedia** Hotel Recommendations
+- **House Prices** Advanced Regression Techniques
+- **Airbnb** New User Bookings
+- **Expedia** Hotel Recommendations
