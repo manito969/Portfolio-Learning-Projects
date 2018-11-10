@@ -1,4 +1,4 @@
-# Learning projects on my way to Professional in Data Science
+# Learning Projects on my way to Professional in Data Science
 
 ### Python
 
@@ -8,8 +8,8 @@
 
 ### Travel Industry
 
-- **Price prediction** Regression
-- **SQL query Optimization** Reforic
+- **Price prediction** 
+- **SQL query Optimization**
 
 ### Agriculture industry
 
@@ -17,7 +17,7 @@
 
 ### Retail Industry
 
-- **Inventory Optimization**g
+- **Inventory Optimization**
 
 ### Challenges
 
