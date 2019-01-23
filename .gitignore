@@ -29,3 +29,6 @@ __pycache__/
 .data-00000-of-00001
 .index
 .meta
+
+#Ignore folders
+Study/
